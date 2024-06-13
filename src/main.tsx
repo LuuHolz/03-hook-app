@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.scss';
-import { HooksApp } from './pages/HooksApp';
+import './styles/index.scss';
+import { CounterApp } from './01-useState/CounterApp.tsx'
+// import { HooksApp } from './pages/HooksApp';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    < HooksApp/>
+    < CounterApp/>
   </React.StrictMode>,
 )
