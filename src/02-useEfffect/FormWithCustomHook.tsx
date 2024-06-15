@@ -1,13 +1,8 @@
 import { useForm } from '../Hooks/useForm';
 
-type FormState = {
-  username: string;
-  email: string;
-  password: string;
-}
+
 
 type Props = {
-  formState: FormState;
   onInputCahnge: ({ target }: { target: any}) => void;
   username: string;
   email: string;
@@ -17,7 +12,7 @@ type Props = {
 
 const FormWithCustomHook = () => {
 
-  const { formState, onInputCahnge, username, email, password, onResetForm } : Props = useForm({
+  const { onInputCahnge, username, email, password, onResetForm } : Props = useForm({
           username: '',
           email: '',
           password: ''

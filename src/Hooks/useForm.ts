@@ -1,7 +1,12 @@
 import { useState } from "react";
 
+type FormState = {
+    username: string;
+    email: string;
+    password: string;
+  }
 
-const useForm = ( initialForm = {}) => {
+const useForm = ( initialForm: FormState ) => {
 
     const [formState, setFormState] = useState( initialForm );
 
