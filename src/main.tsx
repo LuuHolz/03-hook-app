@@ -7,10 +7,12 @@ import './styles/index.scss';
 // import { SimpleForm } from './02-useEfffect/SimpleForm';
 // import { FormWithCustomHook } from '../src/02-useEfffect/FormWithCustomHook';
 // import { MultipleCustomHooks } from '../src/03-examples/MultipleCustomHooks';
-import { FocusScreen } from '../src/04-useRef/FocusScreen';
+// import { FocusScreen } from '../src/04-useRef/FocusScreen';
+// import { Memorize } from './06-memos/Memorize';
+import { MemoHook } from './06-memos/MemoHook'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <FocusScreen/>
+    <MemoHook/>
   </React.StrictMode>,
 )
