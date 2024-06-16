@@ -9,10 +9,11 @@ import './styles/index.scss';
 // import { MultipleCustomHooks } from '../src/03-examples/MultipleCustomHooks';
 // import { FocusScreen } from '../src/04-useRef/FocusScreen';
 // import { Memorize } from './06-memos/Memorize';
-import { MemoHook } from './06-memos/MemoHook'
+// import { MemoHook } from './06-memos/MemoHook'
+import { CallbackHook } from './06-memos/CallbackHook'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <MemoHook/>
+    <CallbackHook/>
   </React.StrictMode>,
 )
