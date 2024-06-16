@@ -6,10 +6,11 @@ import './styles/index.scss';
 // import { CounterWithCustomHook } from './01-useState/CounterWithCustomHook';
 // import { SimpleForm } from './02-useEfffect/SimpleForm';
 // import { FormWithCustomHook } from '../src/02-useEfffect/FormWithCustomHook';
-import { MultipleCustomHooks } from '../src/03-examples/MultipleCustomHooks';
+// import { MultipleCustomHooks } from '../src/03-examples/MultipleCustomHooks';
+import { FocusScreen } from '../src/04-useRef/FocusScreen';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <MultipleCustomHooks/>
+    <FocusScreen/>
   </React.StrictMode>,
 )
