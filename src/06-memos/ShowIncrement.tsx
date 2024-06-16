@@ -1,5 +1,9 @@
 
-const ShowIncrement = ({ increment }) => {
+type IncrementProps = {
+  increment: (num: number) => void;
+}
+
+const ShowIncrement = ({ increment }: IncrementProps) => {
 
     console.log('Se vuelve a generar aunque el boton no haya sufrido cambio');
 

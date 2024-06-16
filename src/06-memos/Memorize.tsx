@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useCounter } from "../Hooks/useCounter";
-import { Small } from '../06-memos/Small.jsx';
+import { Small } from "./Small";
+
 
 const Memorize = () => {
 

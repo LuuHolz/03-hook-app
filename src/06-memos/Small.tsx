@@ -1,6 +1,10 @@
 import { memo } from 'react';
 
-const Small = memo(({ value }) => {
+type SmallProp = {
+  value: number;
+}
+
+const Small = memo(({ value } : SmallProp) => {
   return (
     <small>{ value }</small>
   )

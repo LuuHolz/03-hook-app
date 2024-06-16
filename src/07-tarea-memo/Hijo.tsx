@@ -1,6 +1,11 @@
 import { memo } from "react";
 
-export const Hijo = memo(({ numero, incrementar }) => {
+type HijoProps = {
+    numero: number;
+    incrementar: (num: number) => void;
+}
+
+export const Hijo = memo(({ numero, incrementar }: HijoProps) => {
 
     console.log('  Me volví a generar :(  ');
 
