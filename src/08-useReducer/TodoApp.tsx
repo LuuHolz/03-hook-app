@@ -6,14 +6,14 @@ import { TodoAdd } from "./components/TodoAdd";
 
 const TodoApp = () => {
 
-  const { todos, handleNewTodo, handleDeleteTodo, handleToggleTodo } = useTodos();
+  const { todos, handleNewTodo, handleDeleteTodo, handleToggleTodo, todosCount, pendingTodosCount } = useTodos();
 
 
 
   return (
     <>
       <h1>
-        TodoApp: 10 <small>Pendientes: 2</small>
+        TodoApp: { todosCount} <small>Pendientes: { pendingTodosCount } </small>
       </h1>
       <hr />
 

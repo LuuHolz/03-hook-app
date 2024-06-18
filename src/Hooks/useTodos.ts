@@ -49,11 +49,15 @@ const useTodos = () => {
     });
   };
 
+
+
   return {
     todos,
     handleNewTodo,
     handleDeleteTodo,
     handleToggleTodo,
+    todosCount: todos.length, 
+    pendingTodosCount: todos.filter(todo => !todo.done).length
   };
 };
 
