@@ -4,7 +4,7 @@ import { todoReducer } from "../08-useReducer/todoReducer";
 
 const initialState = [];
 
-const init = () => {
+const init = (): Todo[] => {
   return JSON.parse(localStorage.getItem("todos")) || [];
 };
 
@@ -12,7 +12,7 @@ const useTodos = () => {
   //-----REDUCER-----
 
   //mi reducer y donde tengo el STATE que se ira modificando por medio de los componentes
-  const [todos, dispatch] = useReducer(todoReducer, initialState, init);
+  const [todos, dispatch] = useReducer(todoReducer, [], init);
 
   //-----USE EFFECT-----
 
@@ -22,7 +22,7 @@ const useTodos = () => {
 
   //-----NEW TODO-----
   // payload
-  const handleNewTodo = (todo) => {
+  const handleNewTodo = (todo: Todo) => {
     const action = {
       type: "Add Todo",
       payload: todo,
@@ -33,7 +33,7 @@ const useTodos = () => {
 
   //-----ELIMINAR TODO-----
 
-  const handleDeleteTodo = (id) => {
+  const handleDeleteTodo = (id: number) => {
     dispatch({
       type: "Remove Todo",
       payload: id,
@@ -42,22 +42,20 @@ const useTodos = () => {
 
   //-----TACHAR TODO-----
 
-  const handleToggleTodo = (id) => {
+  const handleToggleTodo = (id: number) => {
     dispatch({
       type: "Toggle Todo",
       payload: id,
     });
   };
 
-
-
   return {
     todos,
     handleNewTodo,
     handleDeleteTodo,
     handleToggleTodo,
-    todosCount: todos.length, 
-    pendingTodosCount: todos.filter(todo => !todo.done).length
+    todosCount: todos.length,
+    pendingTodosCount: todos.filter((todo) => !todo.done).length,
   };
 };
 
