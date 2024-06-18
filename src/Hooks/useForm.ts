@@ -10,7 +10,7 @@ const useForm = ( initialForm: FormState ) => {
 
     const [formState, setFormState] = useState( initialForm );
 
-    const onInputCahnge = ({ target }: { target: any}) => {
+    const onInputChange = ({ target }: { target: any}) => {
         const { name, value } = target;
 
         setFormState({
@@ -28,7 +28,7 @@ const useForm = ( initialForm: FormState ) => {
   return { 
     ...formState,
     formState,
-    onInputCahnge,
+    onInputChange,
     onResetForm 
 
   }
