@@ -37,4 +37,3 @@ const addTodoAction = {
                     //estado anterior, accion
 todos = todoReducer( todos, addTodoAction );
 
-console.log( todos )
