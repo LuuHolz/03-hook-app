@@ -2,7 +2,11 @@ import { useContext } from "react";
 import { UserContext } from "../context/UserContext";
 
 const HomePage = () => {
-  const { user, setUser } = useContext(UserContext);
+  const { user, setUser }  = useContext(UserContext);
+
+  if (!setUser) {
+    throw new Error("setUser is not defined in UserContext");
+  }
 
   return (
     <>

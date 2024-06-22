@@ -1,15 +1,19 @@
 import { UserContext } from "./UserContext";
-import { useState } from "react";
+import { useState, ReactNode } from "react";
 
-// const user = {
-//     id: 123,
-//     name: 'Luciana',
-//     email: 'luciana@gmail.com'
-// }
+type User = {
+    id: number;
+    name: string;
+    email: string;
+  }
 
-const UserProvider = ({ children }) => {
+  type UserProviderProps = {
+    children: ReactNode;
+  }
 
-    const [user, setUser] = useState();
+const UserProvider: React.FC<UserProviderProps> = ({ children }) => {
+
+    const [user, setUser] = useState<User | null>(null);
 
   return (
     // <UserContext.Provider value={{ hola:'Mundo', user: user }}>
