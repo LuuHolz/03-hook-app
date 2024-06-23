@@ -15,6 +15,6 @@
     "isolatedModules": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "**/*.ts", "**/*.tsx", "src/test/**/*.test.ts", "src/test/**/*.test.tsx", "jest.setup.cjs", "babel.config.cjs", "jest.config.cjs"],
+  "include": ["src", "**/*.ts", "**/*.tsx", "src/test/**/*.test.ts", "src/test/**/*.test.tsx"],
   "exclude": ["node_modules"]
 }
