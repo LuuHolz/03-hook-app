@@ -5,8 +5,8 @@ const useCounter = ( initialValue = 10 ) => {
 
     const [ counter, setCounter ] = useState( initialValue )
 
-    const increment = () => {
-        setCounter( counter + 1 );
+    const increment = ( value = 1 ) => {
+        setCounter( counter + value );
     }
     
     const decrement = () => {
@@ -19,7 +19,7 @@ const useCounter = ( initialValue = 10 ) => {
         setCounter( initialValue );
     }
 
-    const decrementTwo = ( value: number ) => {
+    const decrementTwo = ( value: number) => {
         setCounter( counter + value )
     }
 
