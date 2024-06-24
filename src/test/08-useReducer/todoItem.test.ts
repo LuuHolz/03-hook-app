@@ -1,6 +1,6 @@
 import { fireEvent, render, screen } from '@testing-library/react';
 import { Todo } from '../../08-useReducer/types/todos.types';
-import { TodoItem } from '../../08-useReducer/components/TodoItem';
+import  TodoItem  from '../../08-useReducer/components/TodoItem';
 import '@testing-library/jest-dom';
 
 describe('Pruebas en TodoItem', () => { 
